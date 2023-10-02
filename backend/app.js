@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false })); // enable form data
 app.use("/api",AppRouter)
 
 const PORT = 3040;
-const MONGO_DB_URI = 'mongodb://127.0.0.1:27017/edureka';
+const MONGO_DB_URI = 'mongodb://127.0.0.1:27017/restaurant';
 mongoose.connect(MONGO_DB_URI).then(()=> {
     console.log("db connected successfully");
     app.listen(PORT,()=>{
